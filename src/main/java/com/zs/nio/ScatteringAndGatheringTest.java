@@ -46,10 +46,10 @@ public class ScatteringAndGatheringTest {
             Arrays.asList(byteBuffers).forEach(buffer -> buffer.flip());
 
             //将数据读出显示到客户端
-            long byteWirte = 0;
-            while (byteWirte < messageLength) {
+            long byteWrite = 0;
+            while (byteWrite < messageLength) {
                 long l = socketChannel.write(byteBuffers); //
-                byteWirte += l;
+                byteWrite += l;
             }
 
             //将所有的buffer 进行clear
@@ -57,7 +57,7 @@ public class ScatteringAndGatheringTest {
                 buffer.clear();
             });
 
-            System.out.println("byteRead:=" + byteRead + " byteWrite=" + byteWirte + ", messagelength" + messageLength);
+            System.out.println("byteRead:=" + byteRead + " byteWrite=" + byteWrite + ", messagelength" + messageLength);
         }
 
 

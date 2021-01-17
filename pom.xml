@@ -29,6 +29,14 @@
         </dependency>
 
 
+        <dependency>
+             <artifactId>netty-all</artifactId>
+             <groupId>io.netty</groupId>
+             <version>4.1.20.Final</version>
+         </dependency>
+
+
+
         <!--<dependency>-->
             <!--<groupId>log4j</groupId>-->
             <!--<artifactId>log4j</artifactId>-->
